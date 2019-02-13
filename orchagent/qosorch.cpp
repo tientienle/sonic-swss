@@ -41,6 +41,8 @@ enum {
 };
 
 map<string, sai_port_attr_t> qos_to_attr_map = {
+    {dscp_to_tc_field_name, SAI_PORT_ATTR_QOS_DOT1P_TO_TC_MAP},
+    {dscp_to_tc_field_name, SAI_PORT_ATTR_QOS_DOT1P_TO_COLOR_MAP},
     {dscp_to_tc_field_name, SAI_PORT_ATTR_QOS_DSCP_TO_TC_MAP},
     {tc_to_queue_field_name, SAI_PORT_ATTR_QOS_TC_TO_QUEUE_MAP},
     {tc_to_pg_map_field_name, SAI_PORT_ATTR_QOS_TC_TO_PRIORITY_GROUP_MAP},
